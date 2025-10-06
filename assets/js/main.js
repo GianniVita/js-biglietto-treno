@@ -29,6 +29,8 @@ prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usar
 
 */
 
-const prezzo_unitario (0.21 * km);
-const eta_minor (< 18)
-const eta_over_65 (> 65)
+const prezzo_PerKm = 0.21;
+const eta_minor =  18
+const eta_over_65 =  65
+
+let prezzoTotale = (km * prezzo_PerKm)
