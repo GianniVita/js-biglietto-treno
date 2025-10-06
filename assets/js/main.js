@@ -31,6 +31,8 @@ prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usar
     - se l'eta del pax è maggiore di 65 anni applicare uno sconto del 40%
 - del 20% per minori o del 40% per over seventy 
 - Verificare se l'autput da un valore sul prezzo corretto con console.log
+- Arrotondare il prezzo
+- Autput in forma umana con popup alert
 
 */
 // definiamo il prezzo base per km
@@ -53,3 +55,5 @@ if ( eta > 65) {
 }
 //Verifica in console se il risultato è giusto
 console.log(prezzoTotale);
+//Arrotondiamo il prezzo a 2 decimali
+prezzoTotale = prezzoTotale.toFixed(2);
