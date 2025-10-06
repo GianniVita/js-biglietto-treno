@@ -33,18 +33,23 @@ prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usar
 - Verificare se l'autput da un valore sul prezzo corretto con console.log
 
 */
+// definiamo il prezzo base per km
 const prezzo_PerKm = 0.21;
+//Chiediamo l'età al passeggero
 const eta = Number(prompt("inserisci la tua età"))
+//Chiediamo quanti km vuole percorrere
 const km = Number(prompt("inserisci la distanza"))
+//Calcoliamo il prezzo totale senza sconto
 let prezzoTotale = (km * prezzo_PerKm)
 
-
+//Applichiamo di diversi sconti in base all'età del passeggero
+// Se minore il 20% viene applicato 
 if (eta < 18) {
     prezzoTotale = prezzoTotale - (prezzoTotale * 20 / 100)
 }
-
+// Se over 65 il 40% viene applicato
 if ( eta > 65) {
     prezzoTotale = prezzoTotale - (prezzoTotale * 40 / 100)
 }
-
+//Verifica in console se il risultato è giusto
 console.log(prezzoTotale);
