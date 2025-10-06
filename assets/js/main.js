@@ -53,7 +53,11 @@ if (eta < 18) {
 if ( eta > 65) {
     prezzoTotale = prezzoTotale - (prezzoTotale * 40 / 100)
 }
-//Verifica in console se il risultato è giusto
-console.log(prezzoTotale);
 //Arrotondiamo il prezzo a 2 decimali
 prezzoTotale = prezzoTotale.toFixed(2);
+
+//Mostrare il prezzo del biglietto al passeggero in modo umano
+alert(`Il prezzo del tuo Biglietto è\n in € = {prezzoTotale}`)
+
+//Verifica in console se il risultato è giusto
+console.log(prezzoTotale);
