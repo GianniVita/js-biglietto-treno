@@ -33,6 +33,7 @@ prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usar
 - Verificare se l'autput da un valore sul prezzo corretto con console.log
 - Arrotondare il prezzo
 - Autput in forma umana con popup alert
+- inseriamo un acondizione con if per passeggeri al disotto dei 2 anni non pagano
 
 */
 // definiamo il prezzo base per km
