@@ -27,7 +27,8 @@ prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usar
 - chiedere all'utente l'eta 
 - chiedere all'utente i km che vuole percorrere
 - if/ else usare le istruzioni che in base all'eta da uno sconto al pax 
-    -se l'eta del pax è meno di 18 applicare uno sconto del 20%
+    - se l'eta del pax è meno di 18 applicare uno sconto del 20%
+    - se l'eta del pax è maggiore di 65 anni applicare uno sconto del 40%
 - del 20% per minori o del 40% per over seventy 
 - Verificare se l'autput da un valore sul prezzo corretto con console.log
 
@@ -39,7 +40,11 @@ let prezzoTotale = (km * prezzo_PerKm)
 
 
 if (eta < 18) {
-    prezzoTotale = prezzoTotale - (prezzoTotale * 100 / 20)
+    prezzoTotale = prezzoTotale - (prezzoTotale * 20 / 100)
+}
+
+if ( eta > 65) {
+    prezzoTotale = prezzoTotale - (prezzoTotale * 40 / 100)
 }
 
 console.log(prezzoTotale);
