@@ -22,8 +22,10 @@ prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usar
 
 /* Tools:
 - const/let per dichiarare numero km e età passeggero
-- usare la proprieta che in base all'eta da uno sconto al pax del 10% o del 40 %
-- 
+- Definire il prezzo del biglietto di 0.21€ al km
+-if/ else usare la proprieta che in base all'eta da uno sconto al pax 
+- del 20% per minori o del 40% per over seventy 
+- Verificare se l'autput da un valore sul prezzo corretto con console.log
 
 
 */
