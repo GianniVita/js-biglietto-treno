@@ -48,22 +48,22 @@ let prezzoTotale = (km * prezzo_PerKm)
 //Applichiamo di diversi sconti in base all'età del passeggero
 // Se minore il 20% di sconto viene applicato 
 if (eta < 18) {
-    prezzoTotale = prezzoTotale - (prezzoTotale * 20 / 100)
+    prezzoTotale = prezzoTotale - (prezzoTotale * 20 / 100);
 }
 // Se over 65 il 40% di sconto viene applicato
 else if ( eta > 65) {
-    prezzoTotale = prezzoTotale - (prezzoTotale * 40 / 100)
+    prezzoTotale = prezzoTotale - (prezzoTotale * 40 / 100);
 }
 // Se l'eta è uguale a zero il biglietto dovrebbe risultare zero
 if ( eta <= 2) {
-    prezzoTotale = 0
+    prezzoTotale = 0;
 }
 
 //Arrotondiamo il prezzo a 2 decimali
 prezzoTotale = prezzoTotale.toFixed(2);
 
 //Mostrare il prezzo del biglietto al passeggero in modo umano
-alert(`Il prezzo del tuo Biglietto \nè di € ${prezzoTotale}`)
+alert(`Il prezzo del tuo Biglietto \nè di € ${prezzoTotale}`);
 
 //Verifica in console se il risultato è giusto
 console.log(prezzoTotale);
