@@ -22,15 +22,24 @@ prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usar
 
 /* Tools:
 - const/let per dichiarare numero km e età passeggero
+
 - Definire il prezzo del biglietto di 0.21€ al km
-- if/ else usare la proprieta che in base all'eta da uno sconto al pax 
+- chiedere all'utente l'eta 
+- chiedere all'utente i km che vuole percorrere
+- if/ else usare le istruzioni che in base all'eta da uno sconto al pax 
+    -se l'eta del pax è meno di 18 applicare uno sconto del 20%
 - del 20% per minori o del 40% per over seventy 
 - Verificare se l'autput da un valore sul prezzo corretto con console.log
 
 */
-
 const prezzo_PerKm = 0.21;
-const eta_minor =  18
-const eta_over_65 =  65
-
+const eta = Number(prompt("inserisci la tua età"))
+const km = Number(prompt("inserisci la distanza"))
 let prezzoTotale = (km * prezzo_PerKm)
+
+
+if (eta < 18) {
+    prezzoTotale = prezzoTotale - (prezzoTotale * 100 / 20)
+}
+
+console.log(prezzoTotale);
